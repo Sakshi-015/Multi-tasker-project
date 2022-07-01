@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  
+}
+/*header*/
+.header {
+  /* display: flex;*/
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("https://online.stanford.edu/sites/default/files/styles/embedded_large/public/2019-07/computer-science-deep-multi-task-and-meta-learning_CS330.jpg?itok=fBK9cG1V")
+      center/cover no-repeat fixed;
+  /* flex-direction: column;*/
+  margin-top: auto;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.hero .title {
+  color: #fff;
+  font-size: 50px;
+}
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 200px;
+  font-weight: bold;
+  background: orange;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid orange;
+  margin-top: 10px;
+}
+.hero-button:hover {
+  background: #fff;
+  color: orange;
+  border: none;
+}
+.pulsate {
+  /*-webkit-*/
+  animation: pulsate 3s ease-in-out;
+  /*-webkit-*/
+  animation-iteration-count: infinite;
+  opacity: 0.3;
+  color: black;
+}
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* End of header*/
+/* card */
+.slider {
+  margin:190px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px;/**/
+  align-items: center;
+}
+.slider > article {
+  background: white;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 300px;/**/
+  transition: transform 0.3s;
+}
+
+.slider > article:hover {
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+.slider > article img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.btn {
+  padding: 0 20px 20px;
+  text-align: center;
+}
+.btn h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn a {
+  text-align: center;
+  background: #ef6f6c;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .slider {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .slider {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .slider > article {
+    text-align: center;
+  }
+}
+
+.footer {
+  background: #000;
+  text-align: center;
+  padding: 0.5rem;/**/
+}
+.footer .text {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;/**/
+}

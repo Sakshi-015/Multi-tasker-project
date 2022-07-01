@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  /* background-color:antiquewhite;  */
+    background-image: url("https://media.istockphoto.com/photos/dark-gray-and-black-grunge-cement-wall-studio-room-space-product-picture-id1337977426?b=1&k=20&m=1337977426&s=170667a&w=0&h=pXD50PRHzp_VW0Jqc3XVve3lQvKg3d5UnPb8C2urYL4=");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: #fff;
+}
+canvas {
+    border: 2px solid antiquewhite;
+    background-color: #fff;
+}
+
+.toolbox {
+    background-color:darkseagreen;
+    border: 2px solid darkseagreen;
+    display: flex;
+    padding: 1.5rem;
+    width: 804px;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1 rem;
+    margin: 0.25rem;
+    height: 50px;
+    width: 50px;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
+}
